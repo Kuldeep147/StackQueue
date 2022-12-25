@@ -9,6 +9,8 @@ public class StackQueue {
         ob.push(70);
         ob.push(30);
         ob.push(56);
+        ob.pop();
+        System.out.println(ob.peek());
         ob.print();
     }
     public void push(Integer a){
@@ -16,5 +18,11 @@ public class StackQueue {
     }
     public void print(){
         System.out.println(stack);
+    }
+    public  Integer pop(){
+        return stack.pop();
+    }
+    public Integer peek(){
+        return stack.peek();
     }
 }
