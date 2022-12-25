@@ -17,6 +17,8 @@ public class StackQueue {
         ob.enqueue(30);
         ob.enqueue(70);
         ob.printQueue();
+        ob.deQueue();
+        ob.printQueue();
     }
     public void push(Integer a){
         stack.add(a);
@@ -35,5 +37,8 @@ public class StackQueue {
     }
     public void printQueue(){
         System.out.println(queue);
+    }
+    public void deQueue(){
+        queue.removeFirst();
     }
 }
